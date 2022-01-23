@@ -1,0 +1,159 @@
+:root {
+  --heding-text-font: @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap");
+  --body-text-font: @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap");
+  --heading-font-size: 2.5em;
+  --sub-heading-font-size: 1.2em;
+  --body-font-text: 1em;
+  --primary-color: #00fb3f;
+  --black-color: #06060c;
+  --offwhite-color: #e6e6e6;
+  --shadow-color: #b1b1b1;
+  --whte-color: #ffffff;
+  --error-color: #fe1313;
+  --success-color: #06c025;
+}
+
+@media only screen and (max-width: 600px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    background: var(--offwhite-color);
+    font-family: Poppins;
+  }
+  body .main {
+    width: 100%;
+    height: 100vh;
+    align-content: center;
+    display: flex;
+  }
+  body .main .container {
+    background: var(--whte-color);
+    width: 90vw;
+    margin: auto auto;
+    border-radius: 0.5em;
+    box-shadow: 1px 1px 20px 2px var(--shadow-color);
+    box-sizing: border-box;
+    padding: 3em;
+  }
+  body .main .container input, body .main .container select {
+    box-sizing: border-box;
+    margin-top: 1em;
+    width: 100%;
+    height: 1.5em;
+    padding: 0.2em 1em;
+    border-radius: 0.2em;
+  }
+  body .main .container select {
+    font-size: 1.2em;
+    height: 1.8em;
+  }
+  body .main .container #date {
+    font-size: 1.5em;
+    margin: 0;
+  }
+  body .main .container label {
+    color: var(--primary-color);
+  }
+  body .main .container input, body .main .container select {
+    font-size: 1.1em;
+    background: var(--white-color);
+    border: 0.1em solid var(--black-color);
+  }
+  body .main .container input:focus, body .main .container select:focus {
+    border: 0.1em solid var(--primary-color);
+  }
+  body .main .container .info-header {
+    margin-bottom: 2em;
+    display: flex !important;
+  }
+  body .main .container .info-header .home {
+    font-size: 1.2em;
+    color: var(--primary-color);
+  }
+  body .main .container .info-header h1 {
+    font-size: 1.09em;
+  }
+  body .main .container .info-header, body .main .container .name-container, body .main .container .contact-container {
+    display: block;
+    justify-content: space-between;
+  }
+  body .main .container .empty-space {
+    width: 0;
+  }
+  body .main .container .gender-container {
+    display: block;
+    position: relative;
+    margin-top: 1em;
+  }
+  body .main .container .gender-container .dob-label {
+    position: relative;
+    width: 15em !important;
+    margin-top: 1em !important;
+  }
+  body .main .container .cert {
+    display: flex;
+    margin: 0.7em auto;
+  }
+  body .main .container .cert label {
+    margin: auto;
+    font-weight: w900;
+    font-size: 0.8em !important;
+  }
+  body .main .container .cert input {
+    width: 2em;
+    display: inline;
+    position: relative;
+    margin: auto auto auto 2em;
+    font-size: 1.5em !important;
+  }
+  body .main .container .submit-contianer {
+    display: flex;
+  }
+  body .main .container .submit-contianer .submit-btn {
+    width: 25em;
+    background: var(--primary-color);
+    margin: auto;
+    border: none;
+    color: var(--whte-color);
+    font-size: 1.2em;
+    height: 2em;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  body .main .container .submit-contianer .submit-btn:hover {
+    background: none;
+    border: 0.2em var(--primary-color) solid;
+    color: var(--black-color);
+  }
+  body .footer {
+    background: var(--black-color);
+    width: 100wh;
+    display: flex;
+  }
+  .overlay {
+    height: 100vh;
+    width: 90% !important;
+    position: absolute;
+    z-index: 99;
+  }
+
+  .adcontainer {
+    width: 90vw;
+    margin: auto auto;
+    border-radius: 0.5em;
+    box-shadow: 1px 1px 20px 2px var(--shadow-color);
+    box-sizing: border-box;
+    padding: 3em;
+  }
+  .adcontainer .remove {
+    display: block;
+    text-align: center;
+  }
+
+  #users, #users_wrapper, .admin {
+    display: none;
+  }
+}/*# sourceMappingURL=small.css.map */

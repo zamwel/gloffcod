@@ -1,0 +1,244 @@
+:root {
+    --heding-text-font: @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap");
+    --body-text-font: @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap");
+    --heading-font-size: 2.5em;
+    --sub-heading-font-size: 1.2em;
+    --body-font-text: 1em;
+
+    --primary-color: #00fb3f;
+    --black-color: #06060c;
+    --offwhite-color: #e6e6e6;
+    --shadow-color: #b1b1b1;
+    --whte-color: #ffffff;
+    --error-color: #fe1313;
+    --success-color: #06c025;
+}
+
+@media only screen and (min-width: 600px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        background: var(--offwhite-color);
+        font-family: Poppins;
+
+        .main {
+            width: 100%;
+            height: 100vh;
+            align-content: center;
+            //background: var(--black-color);
+            display: flex;
+
+            .container {
+                background: var(--whte-color);
+                width: 90vw;
+                // height: 80vh;
+                margin: auto auto;
+                border-radius: 0.5em;
+                box-shadow: 1px 1px 20px 2px var(--shadow-color);
+                box-sizing: border-box;
+                padding: 3em;
+
+                input {
+                    height: 2em !important;
+                }
+                #check {
+                    width: 1em !important;
+                }
+                input,
+                select {
+                    box-sizing: border-box;
+                    //margin-top: 1em;
+                    width: 100%;
+                    height: 2em;
+                    padding: 0.2em 1em;
+                    //font-size: var(--body-font-size);
+                    border-radius: 0.2em;
+                }
+
+                select {
+                    font-size: 1.2em;
+                    height: 2em!important;
+                    margin-top: 1em!important;
+                }
+                #date {
+                    font-size: 1.5em;
+                    margin-top: .4em;
+                }
+                label {
+                    color: var(--primary-color);
+                }
+
+                input,
+                select {
+                    font-size: 1.1em;
+                    background: var(--white-color);
+                    border: 0.1em solid var(--black-color);
+
+                    &:focus {
+                        border: 0.1em solid var(--primary-color);
+                    }
+                }
+
+                .info-header {
+                    margin-bottom: 2em;
+
+                    .home {
+                        font-size: 1.2em;
+                        color: var(--primary-color);
+                    }
+                    h1 {
+                        font-size: 1.09em;
+                    }
+                }
+                .info-header,
+                .name-container,
+                .contact-container {
+                    display: flex;
+
+                    input {
+                        justify-content: space-between;
+                    }
+                }
+
+                .empty-space {
+                    width: 2em;
+                }
+
+                .gender-container {
+                    display: block;
+                    position: relative;
+                    margin-top: 1em;
+
+                    .dob-label {
+                        position: relative;
+                        width: 25em !important;
+                        margin-top: 1em !important;
+                    }
+                    .gender{
+                        margin-top: .5em!important;
+                    }
+                   
+                }
+
+                .cert {
+                    display: flex;
+                    margin: 0.7em auto;
+
+                    label {
+                        margin: auto ;
+                        
+                        font-size: 1em !important;
+                    }
+                    input {
+                        width: 4em;
+                        display: inline;
+                        position: relative;
+                        margin: auto auto auto 5em;
+                        font-size: 1.5em !important;
+                    }
+                }
+
+                .submit-contianer {
+                    display: flex;
+
+                    .submit-btn {
+                        width: 25em;
+                        background: var(--primary-color);
+                        margin: auto;
+                        border: none;
+                        color: var(--whte-color);
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+
+        .footer {
+            background: var(--black-color);
+           // height: 20vh;
+            width: 100wh;
+            display: flex;
+
+            .footer-element {
+            }
+        }
+    }
+    .overlay{
+        height: 100vh;
+        width: 100%;
+       // background: #00fb3f;
+        position: absolute;
+        z-index: 99;
+    }
+    .adcontainer{
+           
+        width: 90vw;
+       // height: 80vh;
+        margin: auto auto;
+        border-radius: .5em;
+        box-shadow: 1px 1px 20px 2px var(--shadow-color);
+        box-sizing: border-box;
+        padding: 3em;
+
+        .remove{
+            display: block;
+            text-align: center;
+        }
+    }
+
+    
+    
+}
+#qrcode{
+    border: .3em #00fb3f solid;
+    padding: .5em;
+    border-radius: .8em;
+    width: 150px!important;
+    height: 150px;
+    margin: .8em auto auto auto;
+    justify-content: center;
+    display: block;
+
+    img{
+        width: 150px;
+    }
+    
+}
+.overlay ul{
+    padding:0;
+    .na{
+        color: #00fb3f;
+        font-size: 1.2em;
+        margin-left: 1em;
+        margin-bottom: 3em!important;
+        text-align: left;
+    }
+
+    
+}
+.counter , .na{
+        color: #00fb3f;
+        font-size: 1em;
+        margin-left: 1em;
+        margin-bottom: 3em!important;
+        
+    }
+
+    .counter p{
+        margin: 1.4em 0;
+    }
+ul p{
+    text-align: left;
+}
+
+#counter{
+    color: white;
+    margin-top: 1em!important;
+}
+
+#code{
+    color: white;
+    margin-top: 2em!important;
+}

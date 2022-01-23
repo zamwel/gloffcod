@@ -1,0 +1,212 @@
+:root {
+  --heding-text-font: @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap");
+  --body-text-font: @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap");
+  --heading-font-size: 2.5em;
+  --sub-heading-font-size: 1.2em;
+  --body-font-text: 1em;
+  --primary-color: #00fb3f;
+  --black-color: #06060c;
+  --offwhite-color: #e6e6e6;
+  --shadow-color: #b1b1b1;
+  --whte-color: #ffffff;
+  --error-color: #fe1313;
+  --success-color: #06c025;
+}
+
+@media only screen and (min-width: 600px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    background: var(--offwhite-color);
+    font-family: Poppins;
+  }
+  body .main {
+    width: 100%;
+    height: 100vh;
+    align-content: center;
+    display: flex;
+  }
+  body .main .container {
+    background: var(--whte-color);
+    width: 90vw;
+    margin: auto auto;
+    border-radius: 0.5em;
+    box-shadow: 1px 1px 20px 2px var(--shadow-color);
+    box-sizing: border-box;
+    padding: 3em;
+  }
+  body .main .container input {
+    height: 2em !important;
+  }
+  body .main .container #check {
+    width: 1em !important;
+  }
+  body .main .container input,
+body .main .container select {
+    box-sizing: border-box;
+    width: 100%;
+    height: 2em;
+    padding: 0.2em 1em;
+    border-radius: 0.2em;
+  }
+  body .main .container select {
+    font-size: 1.2em;
+    height: 2em !important;
+    margin-top: 1em !important;
+  }
+  body .main .container #date {
+    font-size: 1.5em;
+    margin-top: 0.4em;
+  }
+  body .main .container label {
+    color: var(--primary-color);
+  }
+  body .main .container input,
+body .main .container select {
+    font-size: 1.1em;
+    background: var(--white-color);
+    border: 0.1em solid var(--black-color);
+  }
+  body .main .container input:focus,
+body .main .container select:focus {
+    border: 0.1em solid var(--primary-color);
+  }
+  body .main .container .info-header {
+    margin-bottom: 2em;
+  }
+  body .main .container .info-header .home {
+    font-size: 1.2em;
+    color: var(--primary-color);
+  }
+  body .main .container .info-header h1 {
+    font-size: 1.09em;
+  }
+  body .main .container .info-header,
+body .main .container .name-container,
+body .main .container .contact-container {
+    display: flex;
+  }
+  body .main .container .info-header input,
+body .main .container .name-container input,
+body .main .container .contact-container input {
+    justify-content: space-between;
+  }
+  body .main .container .empty-space {
+    width: 2em;
+  }
+  body .main .container .gender-container {
+    display: block;
+    position: relative;
+    margin-top: 1em;
+  }
+  body .main .container .gender-container .dob-label {
+    position: relative;
+    width: 25em !important;
+    margin-top: 1em !important;
+  }
+  body .main .container .gender-container .gender {
+    margin-top: 0.5em !important;
+  }
+  body .main .container .cert {
+    display: flex;
+    margin: 0.7em auto;
+  }
+  body .main .container .cert label {
+    margin: auto;
+    font-size: 1em !important;
+  }
+  body .main .container .cert input {
+    width: 4em;
+    display: inline;
+    position: relative;
+    margin: auto auto auto 5em;
+    font-size: 1.5em !important;
+  }
+  body .main .container .submit-contianer {
+    display: flex;
+  }
+  body .main .container .submit-contianer .submit-btn {
+    width: 25em;
+    background: var(--primary-color);
+    margin: auto;
+    border: none;
+    color: var(--whte-color);
+    font-size: 1.2em;
+  }
+  body .footer {
+    background: var(--black-color);
+    width: 100wh;
+    display: flex;
+  }
+  .overlay {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+  }
+
+  .adcontainer {
+    width: 90vw;
+    margin: auto auto;
+    border-radius: 0.5em;
+    box-shadow: 1px 1px 20px 2px var(--shadow-color);
+    box-sizing: border-box;
+    padding: 3em;
+  }
+  .adcontainer .remove {
+    display: block;
+    text-align: center;
+  }
+}
+#qrcode {
+  border: 0.3em #00fb3f solid;
+  padding: 0.5em;
+  border-radius: 0.8em;
+  width: 150px !important;
+  height: 150px;
+  margin: 0.8em auto auto auto;
+  justify-content: center;
+  display: block;
+}
+#qrcode img {
+  width: 150px;
+}
+
+.overlay ul {
+  padding: 0;
+}
+.overlay ul .na {
+  color: #00fb3f;
+  font-size: 1.2em;
+  margin-left: 1em;
+  margin-bottom: 3em !important;
+  text-align: left;
+}
+
+.counter, .na {
+  color: #00fb3f;
+  font-size: 1em;
+  margin-left: 1em;
+  margin-bottom: 3em !important;
+}
+
+.counter p {
+  margin: 1.4em 0;
+}
+
+ul p {
+  text-align: left;
+}
+
+#counter {
+  color: white;
+  margin-top: 1em !important;
+}
+
+#code {
+  color: white;
+  margin-top: 2em !important;
+}/*# sourceMappingURL=mobile.css.map */
