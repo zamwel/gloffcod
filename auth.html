@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Foundation for Community Development | Authenticate</title>
+
+    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <section class="main">
+        <div class="container">
+        <div class="image-container">
+            <img class="img" src="/images/gloff.png" alt="gloffcod">
+        </div>
+            <form class="form-info">
+                <div class="info-header">
+                    <h1 class="heading">Sign up for free</h1>
+                   <p class="home">HOME</p>
+                </div>
+                <div class="name-container">
+                    <input type="text" name="fname" placeholder="Enter your first name" required>
+                    <div class="empty-space"></div>
+                    <input type="text" name="lname" placeholder="Enter your last name" required>
+                </div>
+                <div class="email-container">
+                    <input type="email" name="email" placeholder="Enter your email address"required>
+                    <input type="text" name="address" placeholder="Enter your local address"required>
+                </div>
+                <div class="contact-container">
+                    <input type="tel" name="phone" placeholder="Enter your phone number"required>
+                    <div class="empty-space"></div>
+                    <select name="country" id="count" class="country">  </select>
+                </div>
+                <div class="gender-container">
+                    <label class="dob-label" for="date">Date of Birth</label>
+                    <input type="date" name="dob" id="date"required>
+                    <div class="empty-space"></div>
+                    <select name="gender" id="gen" class="gender"required>
+                        <option value="">Select Your Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+
+                </div>
+                <div class="occupation-container">
+                    <input type="text" name="occupation" placeholder="Enter Your Occupation"required>
+                </div>
+                <div class="cert">
+                    <label class="check" for="check">Will you like to request for a cetificate of participation at a cost of Gh¢20.00?</label>
+                    <input type="checkbox" name="check" id="check">
+                </div>
+                <div class="submit-contianer">
+                    <button type="submit" id="submitbtn" class="submit-btn">Submit Form</button>
+                </div>
+                <p class="err-report" style="font-size: .8em; color: red; margin: 1em; margin: auth;"></p>
+            </form>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="foot-element">
+
+        </div>
+    </section>
+
+
+
+
+    <!-- <input type="button" class="login" value="login">
+    <input type="button" class="signup" value="signup">
+    <input type="button" class="logout" value="logout"> -->
+
+
+
+    <script type="module" src="js/auth.js"></script>
+</body>
+
+</html>
